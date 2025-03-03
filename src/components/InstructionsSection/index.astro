@@ -1,73 +1,157 @@
+---
+const link = 'https://www.fincadelcafe.com/'
+---
+
 <section class="w-full bg-[#F9FAFB]">
-
-
-<div class="max-w-7xl mx-auto px-4 py-12 bg-[#F9FAFB]">
+  <div class="max-w-7xl mx-auto px-4 py-12 bg-[#F9FAFB]">
     <div class="flex justify-between items-start mb-12">
       <div class="space-y-4">
         <h1 class="text-4xl md:text-5xl font-bold max-w-md">Ubicación de la Boda</h1>
       </div>
       <div class="flex flex-col items-end">
         <p class="text-gray-600 max-w-md text-right mb-4">
-          Este es el camino para reunirnos y desde del ocaso hasta el amanecer
+          Este es el camino para reunirnos y desde el ocaso hasta el amanecer
         </p>
-        <button class="bg-black text-white px-6 py-2 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-colors">
-          Finca del Café
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </button>
+        <a 
+        href=`${link}` 
+        class="bg-black text-white px-6 py-2 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-colors"
+      >
+        Finca del Café
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </a>
       </div>
     </div>
-  
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <div class="relative group cursor-pointer">
-        <div class="absolute top-4 left-4 bg-white py-1 px-3 rounded-full z-10">
-          <span class="text-sm">124 Mesas</span>
-        </div>
         <div class="relative h-[400px] rounded-2xl overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
           <img 
-            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/46/7d/0a/finca-del-cafe.jpg?w=700&h=-1&s=1" 
-            alt="Italy destinations" 
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            id="imageF1"
+            src="/Finca/F1.jpg"
+            alt="Comedor"
+            class="w-full h-full object-cover transition-opacity duration-500 opacity-100"
           />
-          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">Comedor</h3>
+          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">Finca</h3>
         </div>
       </div>
-  
 
       <div class="relative group cursor-pointer">
-        <div class="absolute top-4 left-4 bg-white py-1 px-3 rounded-full z-10">
-          <span class="text-sm">25 Habitaciónes</span>
-        </div>
         <div class="relative h-[400px] rounded-2xl overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
           <img 
-            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/588531167.jpg?k=03670f7bc0873ff34c987806e41281c18d0be82cfb721426575f46e5d5f4b598&o=&hp=1" 
-            alt="Japan destinations" 
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            id="imageF2"
+            src="/Finca/F7.jpg"
+            alt="Habitaciones"
+            class="w-full h-full object-cover transition-opacity duration-500 opacity-100"
           />
-          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">Habitaciones</h3>
+          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">del</h3>
         </div>
       </div>
-  
 
       <div class="relative group cursor-pointer">
-        <div class="absolute top-4 left-4 bg-white py-1 px-3 rounded-full z-10">
-          <span class="text-sm">2 Piscinas</span>
-        </div>
         <div class="relative h-[400px] rounded-2xl overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
           <img 
-            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/281451770.jpg?k=2a7bd9eef489d758a54c6edd8ff9d1a2306bd2e5b8f2c2d6203dcb279901d0bc&o=&hp=1" 
-            alt="Indonesia destinations" 
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            id="imageF3"
+            src="/Finca/F13.jpg"
+            alt="Piscinas"
+            class="w-full h-full object-cover transition-opacity duration-500 opacity-100"
           />
-          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">Piscinas</h3>
+          <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold z-20">Café</h3>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  // Los arrays con las imágenes
+  let images1 = [
+    { src: '/Finca/F1.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F2.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F3.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F4.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F5.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F6.jpg', imgAlt: 'finca del cafe sta rosa' },
+  ];
+
+  let images2 = [
+    { src: '/Finca/F7.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F8.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F9.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F10.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F11.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F12.png', imgAlt: 'finca del cafe sta rosa' },
+  ];
+
+  let images3 = [
+    { src: '/Finca/F13.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F14.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F15.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F16.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F17.jpg', imgAlt: 'finca del cafe sta rosa' },
+    { src: '/Finca/F18.jpg', imgAlt: 'finca del cafe sta rosa' },
+  ];
+
+  let currentIndex1 = 0;
+  let currentIndex2 = 0;
+  let currentIndex3 = 0;
+
+  // Cambiar imagen 1
+  const changeImage1 = () => {
+    currentIndex1 = (currentIndex1 + 1) % images1.length;
+    const imageElement1 = document.getElementById("imageF1") as HTMLImageElement;  // Convertir a HTMLImageElement
+    if (imageElement1) {
+      imageElement1.classList.add("opacity-0");
+      imageElement1.classList.remove("opacity-100");
+      setTimeout(() => {
+        imageElement1.src = images1[currentIndex1].src;
+        imageElement1.alt = images1[currentIndex1].imgAlt;
+        imageElement1.classList.add("opacity-100");
+        imageElement1.classList.remove("opacity-0");
+      }, 400);
+    }
+  };
+
+  // Cambiar imagen 2
+  const changeImage2 = () => {
+    currentIndex2 = (currentIndex2 + 1) % images2.length;
+    const imageElement2 = document.getElementById("imageF2") as HTMLImageElement;  // Convertir a HTMLImageElement
+    if (imageElement2) {
+      imageElement2.classList.add("opacity-0");
+      imageElement2.classList.remove("opacity-100");
+      setTimeout(() => {
+        imageElement2.src = images2[currentIndex2].src;
+        imageElement2.alt = images2[currentIndex2].imgAlt;
+        imageElement2.classList.add("opacity-100");
+        imageElement2.classList.remove("opacity-0");
+      }, 400);
+    }
+  };
+
+  // Cambiar imagen 3
+  const changeImage3 = () => {
+    currentIndex3 = (currentIndex3 + 1) % images3.length;
+    const imageElement3 = document.getElementById("imageF3") as HTMLImageElement;  // Convertir a HTMLImageElement
+    if (imageElement3) {
+      imageElement3.classList.add("opacity-0");
+      imageElement3.classList.remove("opacity-100");
+      setTimeout(() => {
+        imageElement3.src = images3[currentIndex3].src;
+        imageElement3.alt = images3[currentIndex3].imgAlt;
+        imageElement3.classList.add("opacity-100");
+        imageElement3.classList.remove("opacity-0");
+      }, 400);
+    }
+  };
+
+  // Intervalos para el cambio de imagen cada 3 segundos
+  setInterval(changeImage1, 4000);
+  setInterval(changeImage2, 4000);
+  setInterval(changeImage3, 4000);
+</script>
