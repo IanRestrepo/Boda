@@ -28,9 +28,6 @@
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
         <div class="absolute top-2 right-2">
-          <span class="bg-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-            EN VIVO
-          </span>
         </div>
       </div>
       <!-- Sección 4 -->
@@ -63,16 +60,18 @@
       </div>
       <!-- Sección 7 -->
       <div class="relative rounded-xl overflow-hidden">
-        <img
+        <video
+          autoplay
+          loop
+          muted
           id="image7"
-          src="Public/Pareja/F42.jpg"
-          alt="Pareja 7"
+          src="Public/pedidademano.mp4"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
         <div class="absolute bottom-2 right-2">
-          <button class="bg-white text-black px-3 py-1 rounded-lg text-sm font-medium">
-            Ver más fotos
-          </button>
+          <a href="https://www.youtube.com/shorts/1wICenzg2eA" class="bg-white text-black px-3 py-1 rounded-lg text-sm font-medium">
+            Ver Pedida de mano
+          </a>
         </div>
       </div>
     </div>
@@ -174,5 +173,4 @@ setInterval(() => changeImage(2, 'image3'), 7000); // Sección 3 - cambia cada 7
 setInterval(() => changeImage(3, 'image4'), 8000); // Sección 4 - cambia cada 8 segundos
 setInterval(() => changeImage(4, 'image5'), 9000); // Sección 5 - cambia cada 9 segundos
 setInterval(() => changeImage(5, 'image6'), 10000); // Sección 6 - cambia cada 10 segundos
-setInterval(() => changeImage(6, 'image7'), 11000); // Sección 7 - cambia cada 11 segundos
 </script>

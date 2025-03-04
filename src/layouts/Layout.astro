@@ -14,8 +14,30 @@ import '@styles/global.css';
 	</head>
 	<body>
 		<slot />
+		<audio id="fondomusica" class="invisible fixed" autoplay loop controls>
+			<source src="/musica.mp3" type="audio/mp3">
+			Tu navegador no soporta el audio
+		</audio>
 	</body>
 </html>
+
+<script>
+	window.onload = function() {
+		const audioElement = document.getElementById('fondoMusica') as HTMLAudioElement | null;
+
+		if (audioElement) {
+			// Establecer el volumen antes de reproducir
+			audioElement.volume = 0.5; // Ajusta el volumen a un 5% (puedes probar con 0.1, 0.05, o 0.01)
+
+			// Reproducir el audio después de configurar el volumen
+			audioElement.play().then(() => {
+				console.log('Reproducción de música iniciada');
+			}).catch((error) => {
+				console.log('Error al intentar reproducir el audio:', error);
+			});
+		}
+	};
+</script>
 
 <style is:global>
 	html,
