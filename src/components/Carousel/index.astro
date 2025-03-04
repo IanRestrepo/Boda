@@ -5,7 +5,7 @@
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image1"
-          src="Public/Pareja/F1.jpg"
+          src="src/assets/Pareja/F1.jpg"
           alt="Pareja 1"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -14,7 +14,7 @@
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image2"
-          src="Public/Pareja/F7.jpg"
+          src="src/assets/Pareja/F7.jpg"
           alt="Pareja 2"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -23,7 +23,7 @@
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image3"
-          src="Public/Pareja/F14.jpg"
+          src="src/assets/Pareja/F14.jpg"
           alt="Pareja 3"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -34,7 +34,7 @@
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image4"
-          src="Public/Pareja/F21.jpg"
+          src="src/assets/Pareja/F21.jpg"
           alt="Pareja 4"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -44,7 +44,7 @@
       <div class="relative rounded-xl overflow-hidden col-span-2">
         <img
           id="image5"
-          src="Public/Pareja/F28.jpg"
+          src="src/assets/Pareja/F28.jpg"
           alt="Pareja 5"
           class="w-full h-full object-cover aspect-[2/1] transition-opacity duration-1000 opacity-100"
         />
@@ -53,7 +53,7 @@
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image6"
-          src="Public/Pareja/F35.jpg"
+          src="src/assets/Pareja/F35.jpg"
           alt="Pareja 6"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -86,62 +86,61 @@
 <script>
   // Array con 43 imágenes de la pareja (actualizadas con las rutas correctas)
   const photos = [
-    { title: 'Pareja 1', src: 'Public/Pareja/F1.jpg' },
-    { title: 'Pareja 2', src: 'Public/Pareja/F2.jpg' },
-    { title: 'Pareja 3', src: 'Public/Pareja/F3.jpg' },
-    { title: 'Pareja 4', src: 'Public/Pareja/F4.jpg' },
-    { title: 'Pareja 5', src: 'Public/Pareja/F5.jpg' },
-    { title: 'Pareja 6', src: 'Public/Pareja/F6.jpg' },
-    { title: 'Pareja 7', src: 'Public/Pareja/F7.jpg' },
-    { title: 'Pareja 8', src: 'Public/Pareja/F8.jpg' },
-    { title: 'Pareja 9', src: 'Public/Pareja/F9.jpg' },
-    { title: 'Pareja 10', src: 'Public/Pareja/F10.jpg' },
-    { title: 'Pareja 11', src: 'Public/Pareja/F11.jpg' },
-    { title: 'Pareja 12', src: 'Public/Pareja/F12.jpg' },
-    { title: 'Pareja 13', src: 'Public/Pareja/F13.jpg' },
-    { title: 'Pareja 14', src: 'Public/Pareja/F14.jpg' },
-    { title: 'Pareja 15', src: 'Public/Pareja/F15.jpg' },
-    { title: 'Pareja 16', src: 'Public/Pareja/F16.jpg' },
-    { title: 'Pareja 17', src: 'Public/Pareja/F17.jpg' },
-    { title: 'Pareja 18', src: 'Public/Pareja/F18.jpg' },
-    { title: 'Pareja 19', src: 'Public/Pareja/F19.jpg' },
-    { title: 'Pareja 20', src: 'Public/Pareja/F20.jpg' },
-    { title: 'Pareja 21', src: 'Public/Pareja/F21.jpg' },
-    { title: 'Pareja 22', src: 'Public/Pareja/F22.jpg' },
-    { title: 'Pareja 23', src: 'Public/Pareja/F23.jpg' },
-    { title: 'Pareja 24', src: 'Public/Pareja/F24.jpg' },
-    { title: 'Pareja 25', src: 'Public/Pareja/F25.jpg' },
-    { title: 'Pareja 26', src: 'Public/Pareja/F26.jpg' },
-    { title: 'Pareja 27', src: 'Public/Pareja/F27.jpg' },
-    { title: 'Pareja 28', src: 'Public/Pareja/F28.jpg' },
-    { title: 'Pareja 29', src: 'Public/Pareja/F29.jpg' },
-    { title: 'Pareja 30', src: 'Public/Pareja/F30.jpg' },
-    { title: 'Pareja 31', src: 'Public/Pareja/F31.jpg' },
-    { title: 'Pareja 32', src: 'Public/Pareja/F32.jpg' },
-    { title: 'Pareja 33', src: 'Public/Pareja/F33.jpg' },
-    { title: 'Pareja 34', src: 'Public/Pareja/F34.jpg' },
-    { title: 'Pareja 35', src: 'Public/Pareja/F35.jpg' },
-    { title: 'Pareja 36', src: 'Public/Pareja/F36.jpg' },
-    { title: 'Pareja 37', src: 'Public/Pareja/F37.jpg' },
-    { title: 'Pareja 38', src: 'Public/Pareja/F38.jpg' },
-    { title: 'Pareja 39', src: 'Public/Pareja/F39.jpg' },
-    { title: 'Pareja 40', src: 'Public/Pareja/F40.jpg' },
-    { title: 'Pareja 41', src: 'Public/Pareja/F41.jpg' },
-    { title: 'Pareja 42', src: 'Public/Pareja/F42.jpg' },
-    { title: 'Pareja 43', src: 'Public/Pareja/F43.jpg' }
+    { title: 'Pareja 1', src: 'src/assets/Pareja/F1.jpg' },
+    { title: 'Pareja 2', src: 'src/assets/Pareja/F2.jpg' },
+    { title: 'Pareja 3', src: 'src/assets/Pareja/F3.jpg' },
+    { title: 'Pareja 4', src: 'src/assets/Pareja/F4.jpg' },
+    { title: 'Pareja 5', src: 'src/assets/Pareja/F5.jpg' },
+    { title: 'Pareja 6', src: 'src/assets/Pareja/F6.jpg' },
+    { title: 'Pareja 7', src: 'src/assets/Pareja/F7.jpg' },
+    { title: 'Pareja 8', src: 'src/assets/Pareja/F8.jpg' },
+    { title: 'Pareja 9', src: 'src/assets/Pareja/F9.jpg' },
+    { title: 'Pareja 10', src: 'src/assets/Pareja/F10.jpg' },
+    { title: 'Pareja 11', src: 'src/assets/Pareja/F11.jpg' },
+    { title: 'Pareja 12', src: 'src/assets/Pareja/F12.jpg' },
+    { title: 'Pareja 13', src: 'src/assets/Pareja/F13.jpg' },
+    { title: 'Pareja 14', src: 'src/assets/Pareja/F14.jpg' },
+    { title: 'Pareja 15', src: 'src/assets/Pareja/F15.jpg' },
+    { title: 'Pareja 16', src: 'src/assets/Pareja/F16.jpg' },
+    { title: 'Pareja 17', src: 'src/assets/Pareja/F17.jpg' },
+    { title: 'Pareja 18', src: 'src/assets/Pareja/F18.jpg' },
+    { title: 'Pareja 19', src: 'src/assets/Pareja/F19.jpg' },
+    { title: 'Pareja 20', src: 'src/assets/Pareja/F20.jpg' },
+    { title: 'Pareja 21', src: 'src/assets/Pareja/F21.jpg' },
+    { title: 'Pareja 22', src: 'src/assets/Pareja/F22.jpg' },
+    { title: 'Pareja 23', src: 'src/assets/Pareja/F23.jpg' },
+    { title: 'Pareja 24', src: 'src/assets/Pareja/F24.jpg' },
+    { title: 'Pareja 25', src: 'src/assets/Pareja/F25.jpg' },
+    { title: 'Pareja 26', src: 'src/assets/Pareja/F26.jpg' },
+    { title: 'Pareja 27', src: 'src/assets/Pareja/F27.jpg' },
+    { title: 'Pareja 28', src: 'src/assets/Pareja/F28.jpg' },
+    { title: 'Pareja 29', src: 'src/assets/Pareja/F29.jpg' },
+    { title: 'Pareja 30', src: 'src/assets/Pareja/F30.jpg' },
+    { title: 'Pareja 31', src: 'src/assets/Pareja/F31.jpg' },
+    { title: 'Pareja 32', src: 'src/assets/Pareja/F32.jpg' },
+    { title: 'Pareja 33', src: 'src/assets/Pareja/F33.jpg' },
+    { title: 'Pareja 34', src: 'src/assets/Pareja/F34.jpg' },
+    { title: 'Pareja 35', src: 'src/assets/Pareja/F35.jpg' },
+    { title: 'Pareja 36', src: 'src/assets/Pareja/F36.jpg' },
+    { title: 'Pareja 37', src: 'src/assets/Pareja/F37.jpg' },
+    { title: 'Pareja 38', src: 'src/assets/Pareja/F38.jpg' },
+    { title: 'Pareja 39', src: 'src/assets/Pareja/F39.jpg' },
+    { title: 'Pareja 40', src: 'src/assets/Pareja/F40.jpg' },
+    { title: 'Pareja 41', src: 'src/assets/Pareja/F41.jpg' },
+    { title: 'Pareja 42', src: 'src/assets/Pareja/F42.jpg' },
+    { title: 'Pareja 43', src: 'src/assets/Pareja/F43.jpg' }
   ];
 
   // Dividir las 43 fotos en 7 grupos
   const sections = [
-  photos.slice(0, 7),
-  photos.slice(7, 14),
-  photos.slice(14, 21),
-  photos.slice(21, 28),
-  photos.slice(28, 35),
-  photos.slice(35, 42), 
-  photos.slice(41, 43), 
-];
-
+    photos.slice(0, 7),
+    photos.slice(7, 14),
+    photos.slice(14, 21),
+    photos.slice(21, 28),
+    photos.slice(28, 35),
+    photos.slice(35, 42), 
+    photos.slice(41, 43), 
+  ];
 
   let currentIndices = [0, 0, 0, 0, 0, 0, 0]; // Índices para cada sección
 
@@ -149,7 +148,6 @@
   const changeImage = (sectionIndex: number, imageId: string): void => {
     currentIndices[sectionIndex] = (currentIndices[sectionIndex] + 1) % sections[sectionIndex].length;
     const imageElement = document.getElementById(imageId) as HTMLImageElement;
-    
     
     console.log(sections[sectionIndex])
     if (imageElement) {
@@ -167,10 +165,10 @@
   };
 
   // Intervalos para el cambio de imagen cada 5 segundos para cada sección
-setInterval(() => changeImage(0, 'image1'), 5000); // Sección 1 - cambia cada 5 segundos
-setInterval(() => changeImage(1, 'image2'), 6000); // Sección 2 - cambia cada 6 segundos
-setInterval(() => changeImage(2, 'image3'), 7000); // Sección 3 - cambia cada 7 segundos
-setInterval(() => changeImage(3, 'image4'), 8000); // Sección 4 - cambia cada 8 segundos
-setInterval(() => changeImage(4, 'image5'), 9000); // Sección 5 - cambia cada 9 segundos
-setInterval(() => changeImage(5, 'image6'), 10000); // Sección 6 - cambia cada 10 segundos
+  setInterval(() => changeImage(0, 'image1'), 5000);
+  setInterval(() => changeImage(1, 'image2'), 6000);
+  setInterval(() => changeImage(2, 'image3'), 7000);
+  setInterval(() => changeImage(3, 'image4'), 8000);
+  setInterval(() => changeImage(4, 'image5'), 9000);
+  setInterval(() => changeImage(5, 'image6'), 10000);
 </script>
