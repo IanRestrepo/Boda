@@ -1,7 +1,3 @@
----
-import { Image } from 'astro:assets';
----
-
 <section class="w-full bg-[#F9FAFB]">
   <div class="max-w-7xl mx-auto p-4">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -9,7 +5,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image1"
-          src="src/assets/Pareja/F1.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF37.JPG?alt=media&token=9811f143-fe03-4b61-bc0f-ed84c7ced586 "
           alt="Pareja 1"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -18,7 +14,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image2"
-          src="src/assets/Pareja/F7.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF38.JPG?alt=media&token=0c49c988-efbf-4593-9c52-5fb4d3687f31 "
           alt="Pareja 2"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -27,7 +23,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image3"
-          src="src/assets/Pareja/F14.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF39.JPG?alt=media&token=0acc36c3-ddcd-48f9-b35b-3df425b368a8 "
           alt="Pareja 3"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -38,7 +34,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image4"
-          src="src/assets/Pareja/F21.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF36.JPG?alt=media&token=cf866892-9895-4b46-878a-daa9dfac97ea "
           alt="Pareja 4"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -48,7 +44,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden col-span-2">
         <img
           id="image5"
-          src="src/assets/Pareja/F28.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF7.JPG?alt=media&token=6b781b75-dbb7-450e-9a74-f420fab5df95"
           alt="Pareja 5"
           class="w-full h-full object-cover aspect-[2/1] transition-opacity duration-1000 opacity-100"
         />
@@ -57,7 +53,7 @@ import { Image } from 'astro:assets';
       <div class="relative rounded-xl overflow-hidden">
         <img
           id="image6"
-          src="src/assets/Pareja/F35.jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF41.JPG?alt=media&token=4e7ca1c3-46d8-4b14-bbb3-827102fb3ae9 "
           alt="Pareja 6"
           class="w-full h-full object-cover aspect-square transition-opacity duration-1000 opacity-100"
         />
@@ -88,51 +84,52 @@ import { Image } from 'astro:assets';
 </section>
 
 <script>
+
   // Array con 43 imágenes de la pareja (actualizadas con las rutas correctas)
   const photos = [
-    { title: 'Pareja 1', src: 'src/assets/Pareja/F1.jpg' },
-    { title: 'Pareja 2', src: 'src/assets/Pareja/F2.jpg' },
-    { title: 'Pareja 3', src: 'src/assets/Pareja/F3.jpg' },
-    { title: 'Pareja 4', src: 'src/assets/Pareja/F4.jpg' },
-    { title: 'Pareja 5', src: 'src/assets/Pareja/F5.jpg' },
-    { title: 'Pareja 6', src: 'src/assets/Pareja/F6.jpg' },
-    { title: 'Pareja 7', src: 'src/assets/Pareja/F7.jpg' },
-    { title: 'Pareja 8', src: 'src/assets/Pareja/F8.jpg' },
-    { title: 'Pareja 9', src: 'src/assets/Pareja/F9.jpg' },
-    { title: 'Pareja 10', src: 'src/assets/Pareja/F10.jpg' },
-    { title: 'Pareja 11', src: 'src/assets/Pareja/F11.jpg' },
-    { title: 'Pareja 12', src: 'src/assets/Pareja/F12.jpg' },
-    { title: 'Pareja 13', src: 'src/assets/Pareja/F13.jpg' },
-    { title: 'Pareja 14', src: 'src/assets/Pareja/F14.jpg' },
-    { title: 'Pareja 15', src: 'src/assets/Pareja/F15.jpg' },
-    { title: 'Pareja 16', src: 'src/assets/Pareja/F16.jpg' },
-    { title: 'Pareja 17', src: 'src/assets/Pareja/F17.jpg' },
-    { title: 'Pareja 18', src: 'src/assets/Pareja/F18.jpg' },
-    { title: 'Pareja 19', src: 'src/assets/Pareja/F19.jpg' },
-    { title: 'Pareja 20', src: 'src/assets/Pareja/F20.jpg' },
-    { title: 'Pareja 21', src: 'src/assets/Pareja/F21.jpg' },
-    { title: 'Pareja 22', src: 'src/assets/Pareja/F22.jpg' },
-    { title: 'Pareja 23', src: 'src/assets/Pareja/F23.jpg' },
-    { title: 'Pareja 24', src: 'src/assets/Pareja/F24.jpg' },
-    { title: 'Pareja 25', src: 'src/assets/Pareja/F25.jpg' },
-    { title: 'Pareja 26', src: 'src/assets/Pareja/F26.jpg' },
-    { title: 'Pareja 27', src: 'src/assets/Pareja/F27.jpg' },
-    { title: 'Pareja 28', src: 'src/assets/Pareja/F28.jpg' },
-    { title: 'Pareja 29', src: 'src/assets/Pareja/F29.jpg' },
-    { title: 'Pareja 30', src: 'src/assets/Pareja/F30.jpg' },
-    { title: 'Pareja 31', src: 'src/assets/Pareja/F31.jpg' },
-    { title: 'Pareja 32', src: 'src/assets/Pareja/F32.jpg' },
-    { title: 'Pareja 33', src: 'src/assets/Pareja/F33.jpg' },
-    { title: 'Pareja 34', src: 'src/assets/Pareja/F34.jpg' },
-    { title: 'Pareja 35', src: 'src/assets/Pareja/F35.jpg' },
-    { title: 'Pareja 36', src: 'src/assets/Pareja/F36.jpg' },
-    { title: 'Pareja 37', src: 'src/assets/Pareja/F37.jpg' },
-    { title: 'Pareja 38', src: 'src/assets/Pareja/F38.jpg' },
-    { title: 'Pareja 39', src: 'src/assets/Pareja/F39.jpg' },
-    { title: 'Pareja 40', src: 'src/assets/Pareja/F40.jpg' },
-    { title: 'Pareja 41', src: 'src/assets/Pareja/F41.jpg' },
-    { title: 'Pareja 42', src: 'src/assets/Pareja/F42.jpg' },
-    { title: 'Pareja 43', src: 'src/assets/Pareja/F43.jpg' }
+    { title: 'Pareja 1', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF7.JPG?alt=media&token=6b781b75-dbb7-450e-9a74-f420fab5df95' },
+    { title: 'Pareja 2', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF1.jpg?alt=media&token=c73cee85-96e9-40d0-8e9f-8ddd5f05ab56 ' },
+    { title: 'Pareja 3', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF10.JPG?alt=media&token=fbc9eeb0-3001-4c12-bb80-60548df08033 ' },
+    { title: 'Pareja 4', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF11.JPG?alt=media&token=171bf4b3-49a9-4954-863a-78810a0d44f3 ' },
+    { title: 'Pareja 5', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF12.JPG?alt=media&token=0b4dfe48-1521-4839-b0c8-9a91e73dc0a0 ' },
+    { title: 'Pareja 6', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF13.JPG?alt=media&token=e3ac4c40-97c0-4d03-aba3-09e3fd1a5998 ' },
+    { title: 'Pareja 7', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF14.JPG?alt=media&token=8199407b-d03c-4653-b30a-e041766217d1 ' },
+    { title: 'Pareja 8', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF14.JPG?alt=media&token=8199407b-d03c-4653-b30a-e041766217d1 ' },
+    { title: 'Pareja 9', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF15.JPG?alt=media&token=3693b271-4a14-4ef1-8c6f-b30d1eb3497d ' },
+    { title: 'Pareja 10', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF16.JPG?alt=media&token=dba965af-52b1-4c0d-a17a-546c2001f537 ' },
+    { title: 'Pareja 11', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF17.jpg?alt=media&token=c84a12b4-be2d-4699-8cd5-f4ce0a789d99 ' },
+    { title: 'Pareja 12', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF18.JPG?alt=media&token=f27097b4-2ca0-4ed0-8c59-9417236ef00a ' },
+    { title: 'Pareja 13', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF19.JPG?alt=media&token=f3622374-0852-4f88-a55e-2b862688ebaa ' },
+    { title: 'Pareja 14', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF2.jpg?alt=media&token=177fc11f-aa86-4c72-9414-50c60533c346 ' },
+    { title: 'Pareja 15', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF20.JPG?alt=media&token=5c7f1e6b-fd6c-4d37-b83f-a33d79418d10 ' },
+    { title: 'Pareja 16', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF21.JPG?alt=media&token=ff072708-412b-4267-b652-449175392f9c ' },
+    { title: 'Pareja 17', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF22.JPG?alt=media&token=4e7832f5-5034-4f7b-8bf2-aed0afe6aa24 ' },
+    { title: 'Pareja 18', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF23.JPG?alt=media&token=fb0bf250-ac00-4673-a4df-f368e7b011af ' },
+    { title: 'Pareja 19', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF24.JPG?alt=media&token=e879e1cd-c53d-4190-a96f-b170780d0729 ' },
+    { title: 'Pareja 20', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF25.JPG?alt=media&token=640bd5bd-4f0d-47ed-a50c-0939074590fe ' },
+    { title: 'Pareja 21', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF26.JPG?alt=media&token=fc2530b3-7963-4376-9de8-712b451679ea ' },
+    { title: 'Pareja 22', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF27.JPG?alt=media&token=353e1e8b-9c16-4305-9b66-b410ffadda08 ' },
+    { title: 'Pareja 23', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF28.JPG?alt=media&token=1ba43c67-c8eb-4662-8a1e-61a465c7e64f ' },
+    { title: 'Pareja 24', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF29.JPG?alt=media&token=2f8e19a4-63c0-47a4-aee7-abb5edafa04a ' },
+    { title: 'Pareja 25', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF3.jpg?alt=media&token=5b18e18d-c314-4659-9ebd-681514d13dc0 ' },
+    { title: 'Pareja 26', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF30.JPG?alt=media&token=29f7dd0b-c5b1-4924-8909-8aafd9d83986 ' },
+    { title: 'Pareja 27', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF31.JPG?alt=media&token=32a2ec38-e2a3-4a65-99fc-97c025408777 ' },
+    { title: 'Pareja 28', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF32.JPG?alt=media&token=250063c8-71ee-4969-abac-0dcae8d07827 ' },
+    { title: 'Pareja 29', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF33.JPG?alt=media&token=4e4e6bef-73dc-495d-8140-20e5e3c4a531 ' },
+    { title: 'Pareja 30', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF34.JPG?alt=media&token=c62f126a-9def-4338-8b33-26dc5b8db427 ' },
+    { title: 'Pareja 31', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF35.JPG?alt=media&token=71935aa8-aa29-448d-8553-602a4b18660f ' },
+    { title: 'Pareja 32', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF36.JPG?alt=media&token=cf866892-9895-4b46-878a-daa9dfac97ea ' },
+    { title: 'Pareja 33', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF37.JPG?alt=media&token=9811f143-fe03-4b61-bc0f-ed84c7ced586 ' },
+    { title: 'Pareja 34', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF38.JPG?alt=media&token=0c49c988-efbf-4593-9c52-5fb4d3687f31 ' },
+    { title: 'Pareja 35', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF39.JPG?alt=media&token=0acc36c3-ddcd-48f9-b35b-3df425b368a8 ' },
+    { title: 'Pareja 36', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF4.jpg?alt=media&token=35c21283-b3d3-4b2c-bfac-a4dd42fa66b3 ' },
+    { title: 'Pareja 37', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF40.JPG?alt=media&token=1cdf3b0b-f50b-43e5-b38f-510709936e28 ' },
+    { title: 'Pareja 38', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF41.JPG?alt=media&token=4e7ca1c3-46d8-4b14-bbb3-827102fb3ae9 ' },
+    { title: 'Pareja 39', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF42.JPG?alt=media&token=9d6bdbde-f35c-4d12-a3ea-a3b0c53f05af ' },
+    { title: 'Pareja 40', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF43.jpg?alt=media&token=880847f8-a2ca-4d01-b1c8-0ab43d4ad731 ' },
+    { title: 'Pareja 41', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF5.jpg?alt=media&token=ebbf9ab7-2d98-42e4-b922-6b9bd4f4cb7c ' },
+    { title: 'Pareja 42', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF5.jpg?alt=media&token=ebbf9ab7-2d98-42e4-b922-6b9bd4f4cb7c ' },
+    { title: 'Pareja 43', src: 'https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2FF9.JPG?alt=media&token=f3d35d5b-dfae-4c97-8731-472d5ed5b8b0 ' }
   ];
 
   // Dividir las 43 fotos en 7 grupos
