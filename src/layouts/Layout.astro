@@ -10,11 +10,11 @@ import '@styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="manifest" href="manifest.json" />
-		<title>Astro Basics</title>
+		<title>La boda de Luce & Jorge</title>
 	</head>
 	<body>
 		<slot />
-		<audio id="fondomusica" class="invisible fixed" autoplay loop controls>
+		<audio id="fondomusica" class="invisible fixed" loop controls>
 			<source src="https://firebasestorage.googleapis.com/v0/b/data-shop-f5bf3.appspot.com/o/ds%2Fmusica.mp3?alt=media&token=57c90487-7d43-4a7b-ae20-fefea412759f " type="audio/mp3">
 			Tu navegador no soporta el audio
 		</audio>
@@ -22,21 +22,26 @@ import '@styles/global.css';
 </html>
 
 <script>
-	window.onload = function() {
-		const audioElement = document.getElementById('fondoMusica') as HTMLAudioElement | null;
+    window.onload = function() {
+        const audioElement = document.getElementById('fondomusica') as HTMLAudioElement | null;
 
-		if (audioElement) {
-			// Establecer el volumen antes de reproducir
-			audioElement.volume = 0.5; // Ajusta el volumen a un 5% (puedes probar con 0.1, 0.05, o 0.01)
-
-			// Reproducir el audio después de configurar el volumen
-			audioElement.play().then(() => {
-				console.log('Reproducción de música iniciada');
-			}).catch((error) => {
-				console.log('Error al intentar reproducir el audio:', error);
-			});
-		}
-	};
+        if (audioElement) {
+            // Intentar reproducir el audio automáticamente al cargar la página
+            audioElement.play().then(() => {
+                console.log('Reproducción de música iniciada');
+            }).catch((error) => {
+                console.log('Error al intentar reproducir el audio:', error);
+                // Añadir un evento de clic para iniciar la reproducción si falla
+                document.body.addEventListener('click', () => {
+                    audioElement.play().then(() => {
+                        console.log('Reproducción de música iniciada después de la interacción del usuario');
+                    }).catch((error) => {
+                        console.log('Error al intentar reproducir el audio después de la interacción del usuario:', error);
+                    });
+                }, { once: true });
+            });
+        }
+    };
 </script>
 
 <style is:global>
